@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upadhyay Rubber Industry</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:#f4f4f4;line-height:1.6;transition:0.3s;}
+.dark{background:#121212;color:white;}
+.dark .box,.dark .stat-card{background:#1f1f1f;color:white}
+
+/* HEADER */
+header{background:#111;color:white;text-align:center;padding:30px;}
+header h1{font-size:32px;}
+header button{
+margin-top:15px;padding:8px 20px;border:none;
+background:#ff6600;color:white;border-radius:20px;cursor:pointer;
+}
+
+/* NAV */
+nav{
+background:#111;position:sticky;top:0;z-index:1000;
+padding:15px 0;box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+nav ul{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;list-style:none;}
+nav ul li a{
+padding:10px 20px;background:#ff6600;color:white;
+text-decoration:none;border-radius:25px;font-weight:bold;transition:0.3s;
+}
+nav ul li a:hover{background:white;color:#ff6600;transform:scale(1.1);}
+
+/* HERO */
+.hero{
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1581090700227-4c4a6e6f9b1a');
+background-size:cover;background-position:center;
+color:white;text-align:center;padding:120px 20px;
+}
+.hero h2{font-size:40px;margin-bottom:15px;}
+
+/* SECTION */
+.section{padding:80px 20px;text-align:center;}
+.section h2{margin-bottom:30px;}
+.container{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;}
+
+.box{
+width:320px;background:white;padding:20px;border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);transition:0.3s;
+}
+.box:hover{transform:translateY(-6px);}
+
+/* PRODUCT OVERLAY */
+.product-img-wrapper{
+position:relative;
+overflow:hidden;
+border-radius:12px;
+}
+.product-img-wrapper img{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block;
+}
+.product-text{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,0.6);
+color:white;
+padding:10px;
+font-weight:bold;
+font-size:14px;
+text-align:center;
+}
+
+/* IMAGE STYLE */
+.box img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* STATISTICS */
+.counter-section{
+background:#1c1c1c;color:white;padding:70px 20px;text-align:center;
+}
+.stats-container{
+display:flex;flex-wrap:wrap;justify-content:center;gap:25px;
+}
+.stat-card{
+background:#2b2b2b;padding:25px;width:250px;border-radius:12px;
+}
+.stat-number{
+font-size:38px;font-weight:bold;color:#ff6600;margin-bottom:10px;
+}
+.stat-text{color:#ccc;}
+
+/* CONTACT */
+.contact{
+padding:80px 20px;background:#f9f9f9;text-align:center;
+}
+.contact-buttons{
+margin-top:30px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+.contact-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+padding:12px 25px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+min-width:180px;
+}
+.call-btn{background:#ff6600;}
+.whatsapp-btn{background:#25D366;}
+.linkedin-btn{background:#0077b5;}
+.contact-btn:hover{transform:scale(1.08);}
+.contact iframe{
+width:100%;
+max-width:900px;
+height:300px;
+border:0;
+margin-top:30px;
+}
+
+/* FOOTER */
+footer{background:black;color:white;text-align:center;padding:15px;}
+
+@media(max-width:768px){
+.container,.stats-container,.contact-buttons{
+flex-direction:column;align-items:center;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Upadhyay Rubber Industry</h1>
+<p>Premium Manufacturer of Rubber & Plastic Components</p>
+<button onclick="toggleMode()">Toggle Dark Mode</button>
+</header>
+
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#lab">Testing Lab</a></li>
+<li><a href="#certification">Certification</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h2>Precision Rubber & Plastic Engineering Solutions</h2>
+<p>ISO Certified | Custom Mold Development | Bulk Production</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<h2>About Upadhyay Rubber Industry</h2>
+
+<div style="max-width:900px;margin:auto;margin-top:30px;">
+<p style="margin-bottom:20px;">
+Upadhyay Rubber Industry is a reliable manufacturer of high-performance rubber and plastic components designed for automotive and industrial applications.
+</p>
+<p style="margin-bottom:25px;">
+Our modern molding technology and in-house testing laboratory ensure strict quality standards and long-term performance.
+</p>
+</div>
+
+<div class="container">
+
+<div class="box">
+<img src="company.png">
+<p style="margin-top:10px;">Manufacturing Plant</p>
+</div>
+
+<div class="box">
+<img src="ar.png">
+<p style="margin-top:10px;">Mixing Mill Machine</p>
+</div>
+
+<div class="box">
+<img src="packaging.jpg">
+<p style="margin-top:10px;">Hydraulic Moulding Setup</p>
+</div>
+
+</div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section">
+<h2>Our Products</h2>
+<div class="container">
+
+<div class="box">
+<div class="product-img-wrapper">
+<img src="a.jpg">
+<div class="product-text">Rubber Bush & Industrial Parts</div>
+</div>
+</div>
+
+<div class="box">
+<div class="product-img-wrapper">
+<img src="p.jpg">
+<div class="product-text">Rubber Extruded Profiles</div>
+</div>
+</div>
+
+<div class="box">
+<div class="product-img-wrapper">
+<img src="piece.jpeg">
+<div class="product-text">Custom Molded Components</div>
+</div>
+</div>
+
+<div class="box">
+<div class="product-img-wrapper">
+<img src="q.jpg">
+<div class="product-text">Seal & O-Ring Kits</div>
+</div>
+</div>
+
+<div class="box">
+<div class="product-img-wrapper">
+<img src="r.jpg">
+<div class="product-text">Oil & Packing Seals</div>
+</div>
+</div>
+
+<div class="box">
+<div class="product-img-wrapper">
+<img src="s.jpg">
+<div class="product-text">Industrial Rubber Gaskets</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- LAB -->
+<section id="lab" class="section">
+<h2>Rubber Testing Laboratory</h2>
+<div class="container">
+
+<div class="box">
+<img src="la.png">
+<p style="margin-top:10px;">Testing & Quality Equipment</p>
+</div>
+
+<div class="box">
+<img src="un.png">
+<p style="margin-top:10px;">Advanced Lab Setup</p>
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICATION -->
+<section id="certification" class="section">
+<h2>Certifications</h2>
+<div class="container">
+
+<div class="box">
+<img src="cer.png" style="height:400px;object-fit:contain;">
+<p style="margin-top:10px;">ISO 9001:2015 Certified</p>
+</div>
+
+</div>
+</section>
+
+<!-- COUNTER -->
+<section class="counter-section">
+<h2>Company Statistics</h2>
+<div class="stats-container">
+<div class="stat-card">
+<div class="stat-number counter" data-target="8">0</div>
+<div class="stat-text">Years Experience</div>
+</div>
+<div class="stat-card">
+<div class="stat-number counter" data-target="300">0</div>
+<div class="stat-text">Products Developed</div>
+</div>
+<div class="stat-card">
+<div class="stat-number counter" data-target="35">0</div>
+<div class="stat-text">Industrial Clients</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p><strong>Owner:</strong> Daya Shankar Upadhyay</p>
+<p><strong>Phone:</strong> 8810422099</p>
+<p><strong>Email:</strong> upadhyayrubber@gmail.com</p>
+
+<div class="contact-buttons">
+<a href="tel:8810422099" class="contact-btn call-btn">
+<i class="fas fa-phone"></i> Call Now
+</a>
+<a href="https://wa.me/918810422099" target="_blank" class="contact-btn whatsapp-btn">
+<i class="fab fa-whatsapp"></i> WhatsApp
+</a>
+
+
+</a>
+</div>
+
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14063.835248179343!2d77.34138252541598!3d28.361503999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1da1fe34eb09%3A0x9244fee71d2e0440!2sUpadhyay%20Rubber%20Industries!5e0!3m2!1sen!2sin!4v1707674520187!5m2!1sen!2sin" 
+
+width="100%" 
+height="300" 
+style="border:0;" 
+allowfullscreen="" 
+loading="lazy">
+</iframe>
+<!-- ADDRESS BELOW MAP -->
+<div class="address-box">
+<h3>Our Address</h3>
+<p>
+<strong>Upadhyay Rubber Industry</strong><br>
+Gali Number 25, near SK Jewellers, Block E<br>
+Sanjay Colony, Sector 23<br>
+Faridabad, Haryana - 121004<br>
+India
+</p>
+
+<p style="margin-top:10px;">
+<a href="https://maps.app.goo.gl/krLLPgeYT5e6wnyX6" target="_blank">
+View on Google Maps
+</a>
+</p>
+</div>
+</section>
+
+<footer>
+© 2026 Upadhyay Rubber Industry | All Rights Reserved
+</footer>
+
+<script>
+function toggleMode(){document.body.classList.toggle("dark");}
+
+const counters=document.querySelectorAll(".counter");
+counters.forEach(counter=>{
+counter.innerText="0";
+const update=()=>{
+const target=+counter.getAttribute("data-target");
+const c=+counter.innerText;
+const increment=target/100;
+if(c<target){
+counter.innerText=Math.ceil(c+increment);
+setTimeout(update,20);
+}else{
+counter.innerText=target+"+";
+}
+};
+update();
+});
+</script>
+
+</body>
+</html>
